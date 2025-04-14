@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #982417;
+    color: #FFF0D1;
+    text-align: center;
+    height: 100px;
+    
+}
+
+#logo{
+width: 100px;
+position: fixed;
+left: 50px;
+}
+
+.banner{
+display: flex;
+width: 100%;
+
+}
+
+.cafe{
+
+}
+
+#beneficios{
+    background-color: #FFF0D1;
+    justify-content: center;
+}
+
+#artigo{
+    background-color: black;
+    color: white;
+}
+
+#franqueado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 700px;
+    bottom: 200px;
+    width: 510px;
+    height: 180px;
+    background-color: white;
+}
+
+.modelos{
+    width: 510px;
+    height: 300px;
+}
+
+#negocios{
+    
+}
+
+footer{
+    background-color: #982417;
+    color: white;
+}
