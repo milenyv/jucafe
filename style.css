@@ -13,7 +13,7 @@ header{
 
 #logo{
 width: 100px;
-position: fixed;
+position: absolute;
 left: 50px;
 }
 
@@ -22,6 +22,8 @@ display: flex;
 width: 100%;
 
 }
+
+
 
 .cafe{
 
@@ -47,7 +49,9 @@ width: 100%;
     bottom: 200px;
     width: 510px;
     height: 180px;
-    background-color: white;
+    background-color: #FFF0D1;
+    border:2px solid ;
+    border-radius: 10px;
 }
 
 .modelos{
@@ -62,4 +66,12 @@ width: 100%;
 footer{
     background-color: #982417;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    
+   
 }
