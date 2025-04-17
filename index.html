@@ -1,98 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jucafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img id="logo" src="img/logo.png" alt="logo">
-            <h1 id="titulo-cafe">My café</h1>
-        </div>
-        
+    <header id="">
+        <div class="container-header">
+            <div class="logo-area">
+                <img id="logo" src="img/logo.png" alt="logo">
+                <h1 id="titulo-cafe">My café</h1>
+            </div>
             <nav>
                 <a href="#">Benefícios</a>
                 <a href="#">Depoimentos</a>
                 <a href="#">Franquias</a>
             </nav>
-       
+        </div>
     </header>
+    
 
     <section class="cafe">
-        <img id="banner" src="img/banner.png" alt="">
+        <img id="banner" src="img/banner.png" alt="xícara de café">
         <div id="franqueado">
-                <h1>Seja nosso franquiado!</h1>
-                <p>Uma das redes que <span>mais cresce</span> no brasil</p>
-                <button>Saber mais</button>
-                <button>Registrar interesse</button>
+            <h1>Seja nosso franqueado!</h1>
+            <p>Uma das redes que <span>mais cresce</span> no Brasil</p>
+            <div class="botoes">
+                <button class="btn-transparente">Saber mais</button>
+                <button class="btn-laranja">Registrar interesse</button>
+            </div>
         </div>
     </section>
+    
 
     <section id="beneficios">
-        <h1>Benefícios e vantagens</h1>
-        <div>
-            <img src="img/grafico.png" alt="">
-            <h2>Um mercado em expansão</h2>
-            <p>Projeção de 15% de crescimento do franqueado em 2024</p>
-        </div>
-
-        <div>
-            <img src="img/money.jpeg" alt="">
-            <h2>Ótimos rendimentos</h2>
-            <p>Mercado de franquia alimenticia futura em média 52bi</p>
-        </div>
-
-        <div>
-            <img src="img/2pessoas.jpeg" alt="">
-            <h2>Suporte e treinamentos</h2>
-            <p>Todo apoio o novo franqueado necessita!</p>
+        <h1>Benefícios e Vantagens</h1>
+        <div class="beneficios-container">
+            <div class="beneficio-box">
+                <img src="img/grafico.png" alt="Gráfico de crescimento">
+                <h2>Um mercado em expansão!</h2>
+                <p>Projeção de 15% de crescimento do franchising em 2024</p>
+            </div>
+    
+            <div class="beneficio-box">
+                <img src="img/money.jpeg" alt="Ícone de dinheiro">
+                <h2>Ótimos rendimentos</h2>
+                <p>Mercado de franquia alimentícia fatura em média 52bi</p>
+            </div>
+    
+            <div class="beneficio-box">
+                <img src="img/2pessoas.jpeg" alt="Suporte e treinamento">
+                <h2>Suporte e Treinamentos</h2>
+                <p>Todo apoio que o novo franqueado necessita!</p>
+            </div>
         </div>
     </section>
+    
 
-    <article id="artigo">
+    <section id="depoimento">
         <h1>Depoimentos</h1>
-
-        <img src="img/franqueado.png" alt="">
-
-        <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a JuCafé e seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio. 
-
-        Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e confiança.”
-        </p>
-
-        <h2>Kamila Kaffman</h2>
-        <p>Franqueada - São Paulo SP</p>
-    </article>
+        <div class="container-depoimento">
+          <div class="texto-depoimento">
+            <p>
+              <em>
+                “Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a JuCafé e seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio.<br><br>
+                Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e confiança.”
+              </em>
+            </p>
+            <h2>Kamila Kaffman</h2>
+            <p class="cidade">Franqueada - São Paulo SP</p>
+          </div>
+          <div class="imagem-depoimento">
+            <img src="img/franqueado.png" alt="Kamila Kaffman">
+          </div>
+        </div>
+      </section>
+      
 
     <section id="negocios">
-        <h1>Modelo de negócio</h1>
-        <div>
-            <img class="modelos" src="img/modeloBistro_Dsk.png" alt="">
-            <p>Modelo bistrô</p>
-            <ul>
-                <li>A partir de 25m²</li>
-                <li>Investimento inicial a partir de 250 mil</li>
-                <li>Faturamento anual R$2 milhões</li>
-            </ul>
-        </div>
+        <h1 id="titulo-neg">Modelo de Negócio</h1>
         
-        <div>
-            <img class="modelos" src="img/modeloQuiosque_Dsk.png" alt="">
-            <p>Modelo Quiosque</p>
+        <div class="card-container">
+          
+          <div class="modelo-card">
+            <img src="img/modeloBistro_Dsk.png" alt="Modelo Bistrô">
+            <div class="faixa">Modelo Bistrô</div>
             <ul>
-                <li>Apartir de 10m²</li>
-                <li>Investimento inicial a a partir de R$150 mil</li>
-                <li>Faturamento anual R$750 mil</li>
+              <li>A partir de 25 m²</li>
+              <li>Investimento inicial a partir de 250 mil</li>
+              <li>Faturamento anual R$ 2 milhões</li>
             </ul>
+          </div>
+      
+          
+          <div class="modelo-card">
+            <img src="img/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
+            <div class="faixa">Modelo Quiosque</div>
+            <ul>
+              <li>A partir de 10 m²</li>
+              <li>Investimento inicial a partir de 150 mil</li>
+              <li>Faturamento anual R$ 750 mil</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <P>Siga-nos nas redes sociais</P>
-        <p>Entre em contato 08002220032</p>
-        <p>Desenvolvido por Mileny Velho - <br> Soluções digitais</p>
-    </footer>
+      <footer>
+        <div class="footer-top">
+          <p>Siga-nos nas Redes Sociais:</p>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <p><i class="fas fa-phone-alt" ></i>  Entre em contato 0800 222 0032</p>
+        </div>
+        <div class="footer-bottom">
+          <p>Desenvolvido por: Mileny Velho - <br> Soluções Digitais</p>
+        </div>
+      </footer>
+      
 </body>
 </html>
